@@ -163,3 +163,6 @@ Este comando demora, então aguarde cerca de 10 min. Após verifique os pods com
 kubectl get pods -A
 ```
 Caso tenha algum pod com `Creating`, `CrashLoopBackOf` ou algo semelhante espere alguns minutos para eles se normalizarem !!
+
+# Erros Encontrados
+
