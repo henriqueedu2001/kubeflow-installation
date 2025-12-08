@@ -143,3 +143,23 @@ EOF
 ```bash
 kubectl cluster-info --context kind-kubeflow
 ```
+
+**Clonar Repositório de manifests do Kubeflow**
+```bash
+git clone https://github.com/kubeflow/manifests.git
+cd manifests
+```
+
+**Instalar a Plataforma**
+```bash
+while ! kustomize build example | kubectl apply --server-side --force-conflicts -f -; do
+  echo "Retrying to apply resources"
+  sleep 20
+done
+```
+Este comando demora, então aguarde cerca de 10 min. Após verifique os pods com o comando: 
+
+```bash
+kubectl get pods -A
+```
+Caso tenha algum pod com `Creating`, `CrashLoopBackOf` ou algo semelhante espere alguns minutos para eles se normalizarem !!
