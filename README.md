@@ -119,5 +119,27 @@ O retorno será o terminal mostrando a versão da ferramenta
 
 ___
 
- ### Instalação da Plataforma Kubeflow
- 
+### Instalação da Plataforma Kubeflow
+
+**Criar CLuster Kubernetes com Kind**
+ ```bash
+cat <<EOF | kind create cluster --name=kubeflow --config=-
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+nodes:
+  - role: control-plane
+    image: kindest/node:v1.31.0
+    kubeadmConfigPatches:
+      - |
+        kind: ClusterConfiguration
+        apiServer:
+          extraArgs:
+            "service-account-issuer": "kubernetes.default.svc"
+            "service-account-signing-key-file": "/etc/kubernetes/pki/sa.key"
+EOF
+```
+
+**Verificar se contexto aponta para cluster Correto**
+```bash
+kubectl cluster-info --context kind-kubeflow
+```
