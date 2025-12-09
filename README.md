@@ -180,3 +180,24 @@ kubectl port-forward -n kubeflow svc/ml-pipeline-ui 8080:80
 ```
 
 # Erros Encontrados
+
+### Recursos Necessários
+Para utilização do você precisa dos seguintes recursos computacionais:
+
+- 8 CPUs
+- 60GB RAM
+
+Sem isso os nós eles não sobem e você nunca conseguira subir o Kubeflow completo. (Caso queira alguns componentes é melhor pesquisar quanto é necessário pra cada um)
+
+### Snap
+Na instalação de cada um dos requisitos evite de instalar através do snap, pois a instalação não vem corretamente. 
+
+### Tempo
+A instalação do Kubeflow é bem demorada, então o ideal é que depois de rodar o comando de instalação esperar até que o comando seja finalizado. Caso o comando demore mais de 15min a 20min é bem provavel que tenha dado erro em alguma parte da instalação.
+
+### ErrPullImage
+Esse erro acontece ao tentar fazer instalação apenas do componente de Kubeflow pipelines usando o addon do **minikube**. Esse erro acontece porque ele tenta puxar a imagem de um local que não a possui mais. (Não conseguimos resolver)
+
+### CrashLoopBackOf
+Erro indica que o pod nã foi iniciado corretamente. Acontece por dois motivos, o primeiro e mais provável é que esse pod depende de outro assim ele não inicia corretamente e o segundo pode ser uma falha dentro do pod. Para tentar descobrir onde está a falha de o seguinte comando `kubectl describe pod <nome-do-pod>` ou `kubectl logs <nome-do-pod> -n <namespace>`
+
