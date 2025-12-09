@@ -164,5 +164,19 @@ kubectl get pods -A
 ```
 Caso tenha algum pod com `Creating`, `CrashLoopBackOf` ou algo semelhante espere alguns minutos para eles se normalizarem !!
 
-# Erros Encontrados
+# Acesso ao kubeflow
 
+Acesso ao dashboard completo
+```bash
+kubectl port-forward svc/istio-ingressgateway -n istio-system 8080:80
+```
+
+Usuário padrão: user@example.com
+Senha padrão: 12341234
+
+Acesso ao Kubeflow Pipelines
+```bash
+kubectl port-forward -n kubeflow svc/ml-pipeline-ui 8080:80
+```
+
+# Erros Encontrados
