@@ -232,47 +232,76 @@ Caso você tenha feito o arquivo .YAML através do **Asimov** você precisará b
 scp -P PORTA_VM oper@IP_DA_VM:/home/oper/exemplo.yaml .
 ```
 
-### Criar e Rodar um Pipeline no Kubeflow 
+### Criar e Rodar um Pipeline no Kubeflow
 Vá até Pipelines no menu lateral 
-!imagem
+<p style='text-align: center;'>
+    <img src='docs/MenuLateral-Pipelines.png'></img>
+</p>
 
 **Upload Pipeline**
-!imagem
+<p style='text-align: center;'>
+    <img src='docs/Tela1-Pipeline-Upload.png'></img>
+</p>
 
 **Criar Pipeline**
+</br>
 Coloque o nome do pipeline e uma descrição 
-!imagem
+<p style='text-align: center;'>
+    <img src='docs/Tela2-Pipeline-nome&descricao.png'></img>
+</p>
 
 Faça o Upload do arquivo .YAML e clique em criar
-!imagem
+<p style='text-align: center;'>
+    <img src='docs/Tela3-Pipeline-UploadYAML.png'></img>
+</p>
 
 **Experiments**
+</br>
 Ir até Experiments no menu lateral 
-!imagem
+<p style='text-align: center;'>
+    <img src='docs/MenuLateral-Experiments.png'></img>
+</p>
 
 **Create Experiment**
-!imagem
+<p style='text-align: center;'>
+    <img src='docs/Tela1-Experiment-Create.png'></img>
+</p>
 
 **Criar Experiment**
+</br>
 Coloque o nome do experiment e uma descrição 
-!imagem
+<p style='text-align: center;'>
+    <img src='docs/Tela2-Experiment-nome&descricao.png'></img>
+</p>
 
 **Detalhes**
+</br>
 Escolha o Pipeline já criado anteriormente
-!imagem
+<p style='text-align: center;'>
+    <img src='docs/Tela3-Experiment-ChoosePipeline.png'></img>
+</p>
 
 De um nome e descrição para a Run
-!imagem
+<p style='text-align: center;'>
+    <img src='docs/Tela4-Experiment-nome&descricaoRun.png'></img>
+</p>
 
 Caso tenha parâmetros coloca-los (Imagem de Exemplo apenas)
-!imagem
+<p style='text-align: center;'>
+    <img src='docs/Tela5-Experiment-Parameters.png'></img>
+</p>
 
 Só apertar em start e já  irá começar a run
-!imagem
+<p style='text-align: center;'>
+    <img src='docs/Tela6-Experiment-Start.png'></img>
+</p>
 
 **Run**
-Assim que você criou o Experiment você será direcionado para a run. Assim que tudo ficar verde na sua tela quer dizer que o Pipeline deu certo 
-!imagem
+</br>
+Assim que você criou o Experiment você será direcionado para a run. A prtir do momento que tudo ficar verde na sua tela quer dizer que o Pipeline deu certo 
+<p style='text-align: center;'>
+    <img src='docs/Tela1-Run-Ok.png'></img>
+</p>
 
 # Erros Encontrados
 
