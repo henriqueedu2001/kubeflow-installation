@@ -270,6 +270,10 @@ Caso tenha parâmetros coloca-los (Imagem de Exemplo apenas)
 Só apertar em start e já  irá começar a run
 !imagem
 
+**Run**
+Assim que você criou o Experiment você será direcionado para a run. Assim que tudo ficar verde na sua tela quer dizer que o Pipeline deu certo 
+!imagem
+
 # Erros Encontrados
 
 ### Recursos Necessários
