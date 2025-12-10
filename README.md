@@ -164,13 +164,9 @@ kubectl get pods -A
 ```
 Caso tenha algum pod com `Creating`, `CrashLoopBackOf` ou algo semelhante espere alguns minutos para eles se normalizarem !!
 
-</br>
-
-Chat usado para instalação caso tenha alguma duvida [Chat](https://chatgpt.com/c/6932e028-2bcc-832e-bc66-38cac5404da9)
-
 # Acesso ao kubeflow
 
-Acesso ao dashboard completo
+**Acesso ao dashboard completo**
 ```bash
 kubectl port-forward svc/istio-ingressgateway -n istio-system 8080:80
 ```
@@ -178,10 +174,66 @@ kubectl port-forward svc/istio-ingressgateway -n istio-system 8080:80
 Usuário padrão: user@example.com
 Senha padrão: 12341234
 
-Acesso ao Kubeflow Pipelines
+**Acesso ao Kubeflow Pipelines**
 ```bash
 kubectl port-forward -n kubeflow svc/ml-pipeline-ui 8080:80
 ```
+
+# Como criar um Pipeline
+
+**Instalar Pacote para .env (Caso ainda não esteja instalada)**
+```bash
+sudo apt install python3-venv -y
+```
+
+**Criar ambiente virtual (Caso ainda não criada)**
+```bash
+python3 -m venv kfp-env
+```
+
+**Ativar**
+```bash
+source kfp-env/bin/activate
+```
+o retorno será `(kfp-env) user@vm:~`
+
+**Instalar versão KFP (Caso ainda não esteja instalada)**
+```bash
+pip install kfp==2.14.3
+```
+
+ou
+
+```bash
+pip install kfp
+```
+
+**Criar um arquivo .py com o pipeline dentro**
+```bash
+vim exemplo.py
+```
+
+**Gerar Pipeline**
+```bash
+python3 exemplo.py
+```
+
+**Verificar se geroul .YAML**
+```bash
+ls
+```
+O retorno deve terum arquivo YAML
+
+### Baixar Arquivo YAML da VM
+Caso você tenha feito o arquivo .YAML através do **Asimov** você precisará baixa-lo em sua maquina pra conseguir coloca-lo em um pipeline no **Kubeflow**.
+
+**Baixar**
+```bash
+scp -P PORTA_VM oper@IP_DA_VM:/home/oper/exemplo.yaml .
+```
+
+### Criar e Rodar um Pipeline no Kubeflow 
+
 
 # Erros Encontrados
 
