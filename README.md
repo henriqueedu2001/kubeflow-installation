@@ -233,7 +233,37 @@ scp -P PORTA_VM oper@IP_DA_VM:/home/oper/exemplo.yaml .
 ```
 
 ### Criar e Rodar um Pipeline no Kubeflow 
+Vá até Pipelines no menu lateral 
 
+**Upload Pipeline**
+!imagem
+
+**Criar Pipeline**
+Coloque o nome do pipeline e uma descrição 
+!imagem
+
+Faça o Upload do arquivo .YAML e clique em criar
+!imagem
+
+**Experiments**
+Ir até Experiments no menu lateral 
+
+**Create Experiment**
+!imagem
+
+**Criar Experiment**
+Coloque o nome do experiment e uma descrição 
+!imagem
+
+**Detalhes**
+Escolha o Pipeline já criado anteriormente
+!imagem
+
+De um nome e descrição para a Run
+!imagem
+
+Caso tenha parâmetros coloca-los (Imagem de Exemplo apenas)
+!imagem
 
 # Erros Encontrados
 
