@@ -164,6 +164,10 @@ kubectl get pods -A
 ```
 Caso tenha algum pod com `Creating`, `CrashLoopBackOf` ou algo semelhante espere alguns minutos para eles se normalizarem !!
 
+</br>
+
+Chat usado para instalação caso tenha alguma duvida [Chat](https://chatgpt.com/c/6932e028-2bcc-832e-bc66-38cac5404da9)
+
 # Acesso ao kubeflow
 
 Acesso ao dashboard completo
