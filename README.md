@@ -12,8 +12,22 @@ def say_hello(name: str) -> str:
 ```
 
 # Tópicos
-1. [Instalação Kubeflow](#instalacao-kubeflow)
-2. [Erros Encontrados](#erros-encontrados)
+- [Instalação Kubeflow](#instalacao-kubeflow)
+  - [Docker](#docker)
+  - [Kubectl](#kubectl)
+  - [Kustomize](#kustomize)
+  - [Kind](#kind)
+  - [Instalação da Plataforma Kubeflow](#instalacao-da-plataforma-kubeflow)
+- [Acesso ao Kubeflow](#acesso-ao-kubeflow)
+- [Como criar um Pipeline](#como-criar-um-pipeline)
+  - [Baixar Arquivo YAML da VM](#baixar-arquivo-yaml-da-vm)
+  - [Criar e Rodar um Pipeline no Kubeflow](#criar-e-rodar-um-pipeline-no-kubeflow)
+- [Erros Encontrados](#erros-encontrados)
+  - [Recursos Necessários](#recursos-necessarios)
+  - [Snap](#snap)
+  - [Tempo](#tempo)
+  - [ErrPullImage](#errpullimage)
+  - [CrashLoopBackOf](#crashloopbackof)
 
 
 ## Instalação Kubeflow
@@ -169,7 +183,7 @@ kubectl get pods -A
 ```
 Caso tenha algum pod com `Creating`, `CrashLoopBackOf` ou algo semelhante espere alguns minutos para eles se normalizarem !!
 
-# Acesso ao kubeflow
+## Acesso ao Kubeflow
 
 **Acesso ao dashboard completo**
 ```bash
