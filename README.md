@@ -11,7 +11,12 @@ def say_hello(name: str) -> str:
     return hello_text
 ```
 
-# Instalação Kubeflow
+# Tópicos
+1. [Instalação Kubeflow](#instalacao-kubeflow)
+2. [Erros Encontrados](#erros-encontrados)
+
+
+## Instalação Kubeflow
 Na instalação do Kubeflow primeiro é necessário a instalação de alguns componentes para termos o funcionamento completo da plataforma.
 
 
@@ -179,7 +184,7 @@ Senha padrão: 12341234
 kubectl port-forward -n kubeflow svc/ml-pipeline-ui 8080:80
 ```
 
-# Como criar um Pipeline
+## Como criar um Pipeline
 
 **Instalar Pacote para .env (Caso ainda não esteja instalada)**
 ```bash
@@ -303,7 +308,7 @@ Assim que você criou o Experiment você será direcionado para a run. A prtir d
     <img src='docs/Tela1-Run-Ok.png'></img>
 </p>
 
-# Erros Encontrados
+## Erros Encontrados
 
 ### Recursos Necessários
 Para utilização do você precisa dos seguintes recursos computacionais:
