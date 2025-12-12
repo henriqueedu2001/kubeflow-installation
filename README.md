@@ -31,8 +31,16 @@ def say_hello(name: str) -> str:
   - [CrashLoopBackOf](#crashloopbackof)
 
 ## Acessar VM
-Para acesso a VM você deve acessar o Trello através deste Link [Trello](https://trello.com/c/fM6MPRKX/27-acesso-%C3%A0s-vms)
+**Abrir Power Shell** </br>
+Caso esteja no **windows** clique na tecla windows e digite `Power Shell`
 
+**Trello** </br>
+Para ter o comando de acesso a VM você deve acessar o Trello através deste Link [Trello](https://trello.com/c/fM6MPRKX/27-acesso-%C3%A0s-vms).
+</br>
+- Copie e cole no terminal o comando ssh do tópico `VM no Asimov`
+- Agora copie e cole a senha
+
+Verifique se o caminho do terminal ficou verde !!
 
 ## Instalação Kubeflow
 Na instalação do Kubeflow primeiro é necessário a instalação de alguns componentes para termos o funcionamento completo da plataforma.
