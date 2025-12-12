@@ -136,8 +136,6 @@ kind --version
 
 O retorno será o terminal mostrando a versão da ferramenta
 
-___
-
 ### Instalação da Plataforma Kubeflow
 
 **Criar CLuster Kubernetes com Kind**
