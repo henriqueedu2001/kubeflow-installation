@@ -35,9 +35,9 @@ def say_hello(name: str) -> str:
 Caso esteja no **windows** clique na tecla windows e digite `Power Shell`
 
 **Trello** </br>
-Para ter o comando de acesso a VM você deve acessar o Trello através deste Link [Trello](https://trello.com/c/fM6MPRKX/27-acesso-%C3%A0s-vms).
+Para obter o comando de acesso a VM você deve acessar o Trello através deste Link [Trello](https://trello.com/c/fM6MPRKX/27-acesso-%C3%A0s-vms).
 </br>
-- ssh -p<porta> -L 8080:localhost:8080 <user>@<IP_VM>
+- Digite no terminal o seguinte comando substituindo as informações `ssh -p<porta> -L 8080:localhost:8080 <user>@<IP_VM>`
 - Copie a senha e cole no terminal
 
 Verifique se o caminho do terminal ficou verde !!
