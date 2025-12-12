@@ -37,8 +37,8 @@ Caso esteja no **windows** clique na tecla windows e digite `Power Shell`
 **Trello** </br>
 Para ter o comando de acesso a VM você deve acessar o Trello através deste Link [Trello](https://trello.com/c/fM6MPRKX/27-acesso-%C3%A0s-vms).
 </br>
-- Copie e cole no terminal o comando ssh do tópico `VM no Asimov`
-- Agora copie e cole a senha
+- ssh -p<porta> -L 8080:localhost:8080 <user>@<IP_VM>
+- Copie a senha e cole no terminal
 
 Verifique se o caminho do terminal ficou verde !!
 
@@ -336,6 +336,9 @@ Assim que você criou o Experiment você será direcionado para a run. A prtir d
 <p style='text-align: center;'>
     <img src='docs/Tela1-Run-Ok.png'></img>
 </p>
+
+Caso não tenha entendido veja este video explicando como funciona para criação de um pipeline
+[Video Tutorial Pipelines](https://www.youtube.com/watch?v=5iOQcGfcZe4&t=2413s)
 
 ## Erros Encontrados
 
