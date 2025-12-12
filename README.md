@@ -12,6 +12,7 @@ def say_hello(name: str) -> str:
 ```
 
 # Tópicos
+- [Acessar VM](#acessar-vm)
 - [Instalação Kubeflow](#instalacao-kubeflow)
   - [Docker](#docker)
   - [Kubectl](#kubectl)
@@ -28,6 +29,9 @@ def say_hello(name: str) -> str:
   - [Tempo](#tempo)
   - [ErrPullImage](#errpullimage)
   - [CrashLoopBackOf](#crashloopbackof)
+
+## Acessar VM
+Para acesso a VM você deve acessar o Trello através deste Link [Trello](https://trello.com/c/fM6MPRKX/27-acesso-%C3%A0s-vms)
 
 
 ## Instalação Kubeflow
@@ -225,21 +229,26 @@ ou
 pip install kfp
 ```
 
-**Criar um arquivo .py com o pipeline dentro**
+**Clonar Repositório**
 ```bash
-vim exemplo.py
+git clone https://github.com/henriqueedu2001/kubeflow-installation.git
+```
+
+**Entrar Repositório**
+```bash
+cd kubeflow-installation
 ```
 
 **Gerar Pipeline**
 ```bash
-python3 exemplo.py
+python3 main.py
 ```
 
-**Verificar se geroul .YAML**
+**Verificar se gerou .YAML**
 ```bash
 ls
 ```
-O retorno deve terum arquivo YAML
+O retorno deve ter um arquivo YAML
 
 ### Baixar Arquivo YAML da VM
 Caso você tenha feito o arquivo .YAML através do **Asimov** você precisará baixa-lo em sua maquina pra conseguir coloca-lo em um pipeline no **Kubeflow**.
