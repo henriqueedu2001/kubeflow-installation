@@ -92,6 +92,8 @@ O retorno será um Hello World e a criação de um conteiner.
 
 (Caso tenha algum erro na hora de tentar rodar o teste utilize o comando sudo ou volte para o Passo anterior ao Teste)
 
+[Video Tutorial Instalação Docker](https://www.youtube.com/watch?v=lRnCN475cto)
+
 ### Kubectl
 Kubectl é uma ferramenta de linha de comando para controlar cluster Kubernetes
 
@@ -107,6 +109,8 @@ sudo mv kubectl /usr/local/bin/
 kubectl version --client
 ```
 O retorno será o terminal mostrando a versão da ferramenta
+
+[Video Tutorial Instalação Kubectl](https://www.youtube.com/watch?v=tqLUauXS-VA)
 
 ### Kustomize
 Kustomize é  uma ferramenta nativa do Kubernetes para personalizar arquivos de configuração YAWML sem usar modelos.
@@ -129,6 +133,8 @@ rm kustomize_linux_amd64.tar.gz
 kustomize version
 ```
 
+[Chat Tutorial Intalação Kustomize](https://chatgpt.com/c/693ff9af-c5dc-832c-87f8-d72890a970e2)
+
 O retorno será o terminal mostrando a versão da ferramenta
 
 ### Kind
@@ -145,6 +151,7 @@ sudo mv kind /usr/local/bin/
 ```bash
 kind --version
 ```
+[Video Tutorial Instalação Kind](https://www.youtube.com/watch?v=_m_ZCAmnc_k)
 
 O retorno será o terminal mostrando a versão da ferramenta
 
@@ -208,6 +215,11 @@ Senha padrão: 12341234
 kubectl port-forward -n kubeflow svc/ml-pipeline-ui 8080:80
 ```
 
+**Digitar URL**
+```bash
+http://localhost:8080
+```
+
 ## Como criar um Pipeline
 
 **Instalar Pacote para .env (Caso ainda não esteja instalada)**
@@ -261,10 +273,18 @@ O retorno deve ter um arquivo YAML
 ### Baixar Arquivo YAML da VM
 Caso você tenha feito o arquivo .YAML através do **Asimov** você precisará baixa-lo em sua maquina pra conseguir coloca-lo em um pipeline no **Kubeflow**.
 
-**Baixar**
+**Abrir PowerShell**
+Caso esteja no **windows** clique na tecla windows e digite `Power Shell`
+
+**Comando Para Baixar**
+Sem se conectar a VM digite este comando: 
+
 ```bash
-scp -P PORTA_VM oper@IP_DA_VM:/home/oper/exemplo.yaml .
+scp -P PORTA_VM oper@IP_DA_VM:/home/oper/pipeline.yaml .
 ```
+
+**Onde Encontrar arquivo**
+Esse arquivo baixado estará no mesmo caminho do PowerShell. Provavelmente o seu estará mais ou menos assim: `C:\Users\Seu_user>`
 
 ### Criar e Rodar um Pipeline no Kubeflow
 Vá até Pipelines no menu lateral 
