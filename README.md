@@ -293,18 +293,22 @@ Vá até Pipelines no menu lateral
 </p>
 
 **Upload Pipeline**
+Clique no Botão `+ Upload pipeline`
 <p style='text-align: center;'>
     <img src='docs/Tela1-Pipeline-Upload.png'></img>
 </p>
 
 **Criar Pipeline**
 </br>
-Coloque o nome do pipeline e uma descrição 
+Coloque o nome do pipeline e uma descrição. 
+Exemplo:
+- nome: `Teste`
+- descrição: `Primeiro Teste com Kubeflow Pipelines`
 <p style='text-align: center;'>
     <img src='docs/Tela2-Pipeline-nome&descricao.png'></img>
 </p>
 
-Faça o Upload do arquivo .YAML e clique em criar
+Faça o Upload do arquivo .YAML que foi baixado anteriormente com o nome `pipeline.yaml` e clique em criar
 <p style='text-align: center;'>
     <img src='docs/Tela3-Pipeline-UploadYAML.png'></img>
 </p>
@@ -317,30 +321,40 @@ Ir até Experiments no menu lateral
 </p>
 
 **Create Experiment**
+Clique no Botão `+ Create experiment`
 <p style='text-align: center;'>
     <img src='docs/Tela1-Experiment-Create.png'></img>
 </p>
 
 **Criar Experiment**
 </br>
-Coloque o nome do experiment e uma descrição 
+Coloque o nome do experiment e uma descrição.
+Exemplo:
+- nome: `Teste`
+- descrição: `Primeiro Experiment com Kubeflow Pipelines`
 <p style='text-align: center;'>
     <img src='docs/Tela2-Experiment-nome&descricao.png'></img>
 </p>
 
 **Detalhes**
 </br>
-Escolha o Pipeline já criado anteriormente
+Escolha o Pipeline já criado anteriormente (Caso tenha feito igual  o tutorial o nome será `Teste`)
 <p style='text-align: center;'>
     <img src='docs/Tela3-Experiment-ChoosePipeline.png'></img>
 </p>
 
-De um nome e descrição para a Run
+De um nome e descrição para a Run.
+Exemplo:
+- run nome: `Primeira Run Teste`
+- descrição: `Testando Pipeline`
 <p style='text-align: center;'>
     <img src='docs/Tela4-Experiment-nome&descricaoRun.png'></img>
 </p>
 
-Caso tenha parâmetros coloca-los (Imagem de Exemplo apenas)
+Coloque os paraâmetros necessários para a run.
+Exemplo:
+- primeiro numero: `4`
+- segundo numero: `4`
 <p style='text-align: center;'>
     <img src='docs/Tela5-Experiment-Parameters.png'></img>
 </p>
@@ -352,7 +366,7 @@ Só apertar em start e já  irá começar a run
 
 **Run**
 </br>
-Assim que você criou o Experiment você será direcionado para a run. A prtir do momento que tudo ficar verde na sua tela quer dizer que o Pipeline deu certo 
+Assim que você criou o Experiment você será direcionado para a run. A partir do momento que tudo ficar verde na sua tela quer dizer que o Pipeline deu certo 
 <p style='text-align: center;'>
     <img src='docs/Tela1-Run-Ok.png'></img>
 </p>
