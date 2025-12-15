@@ -206,9 +206,8 @@ Caso tenha algum pod com `Creating`, `CrashLoopBackOf` ou algo semelhante espere
 ```bash
 kubectl port-forward svc/istio-ingressgateway -n istio-system 8080:80
 ```
-
-Usuário padrão: user@example.com
-Senha padrão: 12341234
+- Usuário padrão: user@example.com
+- Senha padrão: 12341234
 
 **Acesso ao Kubeflow Pipelines**
 ```bash
