@@ -292,7 +292,7 @@ Vá até Pipelines no menu lateral
     <img src='docs/MenuLateral-Pipelines.png'></img>
 </p>
 
-**Upload Pipeline**
+**Upload Pipeline** </br>
 Clique no Botão `+ Upload pipeline`
 <p style='text-align: center;'>
     <img src='docs/Tela1-Pipeline-Upload.png'></img>
@@ -320,7 +320,7 @@ Ir até Experiments no menu lateral
     <img src='docs/MenuLateral-Experiments.png'></img>
 </p>
 
-**Create Experiment**
+**Create Experiment** </br>
 Clique no Botão `+ Create experiment`
 <p style='text-align: center;'>
     <img src='docs/Tela1-Experiment-Create.png'></img>
