@@ -133,7 +133,7 @@ rm kustomize_linux_amd64.tar.gz
 kustomize version
 ```
 
-[Chat Tutorial Intalação Kustomize](https://chatgpt.com/c/693ff9af-c5dc-832c-87f8-d72890a970e2)
+[Chat Tutorial Intalação Kustomize](https://chatgpt.com/share/69416398-3044-8005-aa8b-24d26c3357a4)
 
 O retorno será o terminal mostrando a versão da ferramenta
 
